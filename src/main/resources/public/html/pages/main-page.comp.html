@@ -1,0 +1,14 @@
+<div class="main-panel">
+  <div class="flex-d">
+    <ui-graph canvasId="inputCsv" [intervals]="intervals"></ui-graph>
+    <ui-graph canvasId="outputCsv" [intervals]="overlappedIntervals"></ui-graph>
+  </div>
+  <div>
+    <price-interval [isNew]="isLast" [intervalData]="item"
+                    *ngFor="let item of intervals; last as isLast"></price-interval>
+    <div class="flex-d buttons">
+      <button pButton type="button" (click)="addPriceInterval()" icon="fa-plus"></button>
+      <button pButton type="button" (click)="calculatePricesOverlaps()" icon="fa-send"></button>
+    </div>
+  </div>
+</div>

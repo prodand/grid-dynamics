@@ -1,0 +1,24 @@
+<div class="root flex-d">
+  <input type="number"
+         step="0.01"
+         [(ngModel)]="intervalData.amount"
+         [disabled]="!editMode"
+         pInputText
+         placeholder="Price">
+  <p-calendar [(ngModel)]="intervalData.start"
+              [timeOnly]="true"
+              [disabled]="!editMode"
+              placeholder="From..."></p-calendar>
+  <p-calendar [(ngModel)]="intervalData.end"
+              [timeOnly]="true"
+              [disabled]="!editMode"
+              placeholder="To..."></p-calendar>
+  <p-dropdown [options]="types"
+              [dataKey]="value"
+              [disabled]="!editMode"
+              [(ngModel)]="intervalData.type"></p-dropdown>
+  <div class="buttons flex-d" *ngIf="!isNew">
+    <button pButton type="button" (click)="edit()" icon="fa-edit" [disabled]="!editMode"></button>
+    <button pButton type="button" (click)="save()" icon="fa-save" [disabled]="editMode"></button>
+  </div>
+</div>

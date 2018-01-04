@@ -1,0 +1,11 @@
+Import as maven project into IDE
+
+cd src/main/resources/public
+npm install
+
+Create Run Configuration for spring boot with main class:
+com.dmytrop.GridDynamicsApplication
+
+There are two profiles in maven config: "dev" and "realease"
+
+Chose "dev" if you don't want to bother about building front end part(I had no time to test completely webpack build which is come with release profile)

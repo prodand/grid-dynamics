@@ -1,0 +1,24 @@
+.main-panel {
+  width: 100%;
+}
+
+.main-panel > div:first-child {
+  margin-bottom: 30px;
+}
+
+price-interval {
+  display: block;
+}
+
+ui-graph {
+  display: block;
+  width: 700px;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+.buttons button {
+  margin-right: 20px;
+}

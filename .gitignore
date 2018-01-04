@@ -1,0 +1,10 @@
+target/
+.idea
+*.iws
+*.iml
+*.ipr
+src/main/resources/public/src/**/*.js
+src/main/resources/public/src/**/*.js.map
+src/main/resources/public/app
+node_modules
+src/main/resources/public/index.html

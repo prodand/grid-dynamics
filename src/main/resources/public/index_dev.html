@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="/">
+  <title>Grid Dynamics</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+
+  <link href="node_modules/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="node_modules/primeng/resources/themes/bootstrap/theme.css" rel="stylesheet" type="text/css" />
+  <link href="node_modules/primeng/resources/primeng.min.css" type="text/css" rel="stylesheet" />
+  <link href="css/app.css" rel="stylesheet" type="text/css">
+
+  <script src="node_modules/core-js/client/shim.min.js"></script>
+  <script src="node_modules/zone.js/dist/zone.min.js"></script>
+  <script src="node_modules/reflect-metadata/Reflect.js"></script>
+  <script src="node_modules/systemjs/dist/system.js"></script>
+  <script src="node_modules/fabric/dist/fabric.js"></script>
+  <!-- 2. Configure SystemJS -->
+  <script src="config/systemjs.config.js"></script>
+  <script>
+    System.import('app').catch(function(err) {
+      console.error(err);
+    });
+  </script>
+</head>
+<body>
+  <app></app>
+</body>
+</html>
